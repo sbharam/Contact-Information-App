@@ -2,7 +2,7 @@
 <article>
 <h2>Stack</h2>
 <ul>
-<li>Awesome <a href="https://angular.io/" rel="nofollow">Angular 6</a> on the client</li>
+<li>Awesome <a href="https://angular.io/" rel="nofollow">Angular</a> on the client</li>
 <li>CSS based on <a href="https://material.angular.io/" rel="nofollow">Angular Material</a></li>
 </ul>
 <h2><a id="user-content-running-end-to-end-tests" class="anchor" aria-hidden="true" href="#development-server"></a>Development server</h2>
