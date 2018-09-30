@@ -7,6 +7,8 @@
 </ul>
 <h2><a id="user-content-running-end-to-end-tests" class="anchor" aria-hidden="true" href="#development-server"></a>Development server</h2>
 <p>Run <code>ng serve</code> for a dev server. Navigate to <code>http://localhost:4200/</code>. The app will automatically reload if you change any of the source files.</p>
+ <h2><a id="user-content-build" class="anchor" aria-hidden="true" href="#build"></a>Build</h2>
+<p>Run <code>ng build</code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory. Use the <code>-prod</code> flag for a production build.</p>
 <h2><a id="user-content-running-unit-tests" class="anchor" aria-hidden="true" href="#running-unit-tests"></a>Running unit tests</h2>
 <p>Run <code>ng test</code> to execute the unit tests via <a href="https://karma-runner.github.io" rel="nofollow">Karma</a>.</p>
 <h2><a id="user-content-running-end-to-end-tests" class="anchor" aria-hidden="true" href="#running-end-to-end-tests"></a>Running end-to-end tests</h2>
