@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
+@import "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
+body { 
+    margin: 0; 
+    font-family: 'Segoe UI', sans-serif !important; 
+    font-size: 14px;
+    background: #f5f7fa;
+}
+.mat-card {
+    padding:0 !important;
+}
+.mat-card-header{
+    padding:10px 10px 0px !important;
+    border-bottom: 1px solid #c1bebe;
+}
+.mat-card-title{
+    font-size:14px;
+}
+.mat-card-content{
+    padding:20px !important;
+}
+.mat-form-field{
+    width:100%;
+}
+.mandatory-info{
+    color: red;
+}

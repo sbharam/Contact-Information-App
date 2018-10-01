@@ -1,0 +1,91 @@
+<mat-card>
+
+  <mat-card-header>
+    <mat-card-title>Contact Information Screen</mat-card-title>
+  </mat-card-header>
+
+  <form novalidate [formGroup]="frmContactInfo" (ngSubmit)="onFrmSubmit()">
+    <mat-card-content>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="pull-right">
+            <p class="mandatory-info">Fields marked with * are mandatory.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <mat-form-field>
+            <input matInput placeholder="Enter your first name" formControlName="firstName" required>
+            <mat-error *ngIf="firstName.invalid">
+              <mat-icon>error</mat-icon> {{getErrorMessage('firstName')}}
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-4">
+          <mat-form-field>
+            <input matInput placeholder="Enter your last name" formControlName="lastName" required>
+            <mat-error *ngIf="lastName.invalid">
+              <mat-icon>error</mat-icon> {{getErrorMessage('lastName')}}
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-4">
+          <mat-form-field>
+            <input matInput placeholder="Enter your email" formControlName="email" required>
+            <mat-error *ngIf="email.invalid">
+              <mat-icon>error</mat-icon> {{getErrorMessage('email')}}
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <mat-form-field>
+            <input matInput placeholder="Enter your phone number" formControlName="phoneNumber" required>
+            <mat-hint>Format should be one of this: XXX-XXX-XXXX, (XXX)XXX-XXXX, (XXX) XXX-XXXX, XXX XXX XXX, XXXXXXXXXX, 1 XXX XXX
+              XXX, enter digits only and max length 10 digit.
+            </mat-hint>
+            <mat-error *ngIf="phoneNumber.invalid">
+              <mat-icon>error</mat-icon> {{getErrorMessage('phoneNumber')}}
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-4">
+          <mat-form-field>
+            <mat-select placeholder="Select status" formControlName="status" required>
+              <mat-option *ngFor="let statusItem of statusList" [value]="statusItem.value">
+                {{statusItem.viewValue}}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="status.invalid">
+              <mat-icon>error</mat-icon> {{getErrorMessage('status')}}
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="pull-right">
+            <button type="submit" mat-raised-button>{{actionType}}</button>
+            <button mat-raised-button (click)="onReset()">Clear</button>
+          </div>
+        </div>
+      </div>
+
+      <br/>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <app-grid [gridOptions]="gridOptions" [rowData]="gridData" [columnDefs]="columnDefs">
+          </app-grid>
+        </div>
+      </div>
+
+    </mat-card-content>
+  </form>
+
+</mat-card>
