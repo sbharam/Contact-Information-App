@@ -16,7 +16,10 @@ npm install</pre></div>
  <h2><a id="user-content-installing--getting-started" class="anchor" aria-hidden="true" href="#installing--getting-started"></a>Installing / Getting started</h2>
 <p>A quick introduction of the minimal setup you need to get a Contact-Information-AppContact-Information-App up &amp;
 running.</p>
-<div class="highlight highlight-source-shell"><pre>commands here</pre></div>
+<div class="highlight highlight-source-shell"><pre>git clone https://github.com/sbharam/Contact-Information-App.git
+<span class="pl-c1">cd</span> your-project/
+npm install
+npm serve</pre></div>
 <h2><a id="user-content-running-end-to-end-tests" class="anchor" aria-hidden="true" href="#development-server"></a>Development server</h2>
 <p>Run <code>ng serve</code> for a dev server. Navigate to <code>http://localhost:4200/</code>. The app will automatically reload if you change any of the source files.</p>
  <h2><a id="user-content-build" class="anchor" aria-hidden="true" href="#build"></a>Build</h2>
