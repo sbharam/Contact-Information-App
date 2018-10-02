@@ -7,6 +7,6 @@ export const tableDescriptor = {
     { headerName: 'Email', field: 'email' },
     { headerName: 'Phone Number', field: 'phoneNumber' },
     { headerName: 'Status ', field: 'status', width: 130 },
-    { headerName: 'Action ', cellRendererFramework: ActionCellRendererComponent, suppressSorting: true, suppressFilter: true }
+    { headerName: 'Actions ', cellRendererFramework: ActionCellRendererComponent, suppressSorting: true, suppressFilter: true }
   ]
 }
